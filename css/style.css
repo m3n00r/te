@@ -1,0 +1,169 @@
+:root{
+  --color-default:#212529;
+  --main-color:#E61414;
+  --secondary-color:#7f7f90;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--color-default);
+}
+ul{
+  list-style-type: none;
+}
+
+.container{
+  width:85%;
+  margin:auto;
+  padding:25px 5px;
+}
+
+
+
+
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .heading{
+  position: relative;
+}
+.main-nav .heading::after{
+  content: ".";
+  position: absolute;
+  color:var(--main-color);
+}
+.main-nav ul{
+  display: flex;
+  gap: 30px;
+}
+.main-nav ul li a{
+  position: relative;
+  color: var(--secondary-color);
+  display: inline-block;
+  transition:all 0.5s;
+  
+}
+.main-nav ul li a::after{
+  content: "";
+  position:absolute;
+  width:0;
+  height:3px;
+  background-color: var(--main-color);
+  bottom: -3px;
+  left:0;
+  transition:all 0.5s;
+}
+.main-nav ul li a:hover{
+  color: var(--color-default);
+
+}
+.main-nav ul li a:hover::after{
+  width:100%;
+}
+
+.main-nav .icons {
+display: flex;
+gap: 10px;
+}
+.main-nav .icons i {
+  font-size:20px;
+  cursor:pointer;
+}
+.main-nav .icons .bars{
+  display: none;
+}
+.main-nav .icons .bars{
+  display: block;
+}
+
+#home{
+  background-color: #eee;
+  min-height: 100vh;
+  
+}
+#home .main-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#home .main-home .home-info{
+width: 80%;
+}
+#home .main-home .home-info h1{
+font-size: 50px;
+}
+#home .main-home .home-info p{
+  padding: 20px 0;
+}
+#home .main-home .home-info .home-buttons{
+
+}
+  #home .main-home .home-info .home-buttons .main-bar{
+padding: 10px 20px;
+color: #fff;
+background-color: var(--main-color);
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+  }
+  #home .main-home .home-info .home-buttons .main-bar:hover{
+    background-color: red;
+  }
+  #home .main-home .home-info .home-buttons .icon {
+display: inline-block;
+background-image: linear-gradient(to right,var(--main-color)0 50%,transparent 100%);
+position: relative;
+  }
+  #home .main-home .home-info .home-buttons .icon i{
+
+  }
+  #home .main-home .home-info .home-buttons .play-bth{
+
+  }
+  .chief  {
+    width: 50%;
+}
+#chief  {
+  width: 50%;
+  background-color: var(--color-light);
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: scale var(--secondary-color);
+  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+#chief  img {
+  width: 100%;
+}
+ img {
+  display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#chief {
+  gap: 1.875rem;
+  padding-block: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--color-default);
+}
+/*.container{
+  width: 33%;
+
+}
+.container img{
+  width: 100%;
+}*/
